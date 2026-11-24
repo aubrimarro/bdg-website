@@ -1,0 +1,412 @@
+/*MASTER CSS*/
+
+/* =========================================
+   SHARED STYLES
+========================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* Header and Navigation */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F08683;
+    padding: 10px 30px;
+}
+
+nav img {
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    background-color: #65B445;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Main Content */
+
+main {
+    padding: 30px;
+}
+
+.title {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/team/dance-team.jpg");
+    background-color: antiquewhite;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    color: yellow;
+}
+
+.description {
+    text-align: center;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    background-color: #E12726;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #B82221;
+}
+
+
+/* =========================================
+   PRODUCTS PAGE
+========================================= */
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.product h3 {
+    margin: 10px 0 5px;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-list {
+    display: grid;
+    grid-template-columns: repeat (5, 1fr);
+    gap: 25px;
+}
+
+.about img {
+    max-width: 100%;
+    max-height: 100%;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+
+.about h3 {
+    margin: 10px 0 5px;
+}
+
+.about p {
+    margin: 5px 0;
+}
+
+
+/* =========================================
+   GALLERY PAGE
+========================================= */
+
+.gallery-list {
+    columns: 4;
+    column-gap: 5px;
+}
+
+.photo {
+    margin: 0 0 5px;
+    break-inside: avoid;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================================
+   CONTACT PAGE
+========================================= */
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+[type="email"],
+[type="tel"] {
+    padding: 8px;
+    border: 1px solid #cccc;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.custom-button {
+    display: inline-block;
+    background-color: #E12726;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-top: 1px solid #dddddd;
+}
+
+footer img {
+    max-width: 100px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.footer-logo {
+    width: 110px;
+}
+
+.footer-brand .icons {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.footer-brand .icons img {
+    width: 22px;
+}
+
+/* Footer Links */
+
+.footer-links h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+/* Certifications */
+
+.footer-certifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.footer-certifications img {
+    max-width: 170px;
+    width: 100%;
+    height: auto;
+}
+/* Hamburger Menu */
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-button span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+/* =========================================
+   MOBILE STYLES
+========================================= */
+
+@media (max-width: 700px) {
+
+    /* Shared Mobile Styles */
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: row;
+        position: relative;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 35%;
+    background-color: transparent;
+    gap: 10px;
+    padding: 15px 0;
+    z-index: 10;
+
+    /* Animation */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    }
+
+    nav ul.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    }
+
+    nav ul li {
+    width: 35%;
+    text-align: center;
+    }
+    .button {
+        width: 90%;
+    }
+
+
+    /* Products Page */
+
+    .product-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .product {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        text-align: left;
+    }
+
+    .product img {
+        width: 40%;
+        height: 130px;
+        object-fit: contain;
+    }
+
+    .product h3 {
+        margin-top: 0;
+    }
+
+
+    /* About Page */
+
+    .about-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    /* Gallery Page */
+
+    .gallery-list {
+        columns: 2;
+        column-gap: 4px;
+    }
+
+
+    /* Footer */
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .footer-certifications {
+        align-items: flex-start;
+    }
+}

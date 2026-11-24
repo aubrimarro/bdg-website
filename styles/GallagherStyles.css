@@ -1,0 +1,241 @@
+/* =========================================
+   BIG DADDY GRAPHICS CONTACT PAGE
+========================================= */
+
+/* TOP PINK NAVIGATION BAR */
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F08683;
+    padding: 5px 30px;
+}
+
+.top-bar .logo {
+    width: 75px;
+    height: auto;
+}
+
+.top-bar .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    flex: 1;
+}
+
+.top-bar .buttons a {
+    background-color: #65B445;
+    color: white;
+    text-decoration: none;
+    padding: 7px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid #539637;
+}
+
+.top-bar .buttons a:hover {
+    background-color: #4F9835;
+}
+
+
+/* CONTACT BANNER */
+
+.contact-banner {
+    text-align: center;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("../images/team/dance-team.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: yellow;
+    padding: 5px 15px;
+}
+
+.contact-banner h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.contact-banner p {
+    margin: 0;
+    font-weight: bold;
+}
+
+
+/* CONTACT INFORMATION AND STORE PHOTO */
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 5%;
+    min-height: 270px;
+    background-color: white;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info section {
+    margin-bottom: 30px;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.contact-image {
+    flex: 0 0 35%;
+    text-align: center;
+}
+
+.contact-image img {
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: white;
+    padding: 25px;
+    border-top: 1px solid #dddddd;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.footer-logo {
+    width: 75px;
+}
+
+.footer-brand .icons {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-brand .icons img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.footer-links h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.footer-links ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* CERTIFICATIONS */
+
+.footer-certifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer-certifications img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .top-bar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .top-bar .buttons {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .top-bar .buttons a {
+        padding: 8px 12px;
+    }
+
+    .contact-banner h1 {
+        font-size: 42px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+    }
+
+    .contact-info h2 {
+        text-align: left;
+    }
+
+    .contact-image {
+        flex: 1;
+    }
+
+    .contact-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .footer-certifications {
+        align-items: flex-start;
+    }
+
+}
